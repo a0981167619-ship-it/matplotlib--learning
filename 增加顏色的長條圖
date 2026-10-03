@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=[1,2,3,4,5]
+h=[10,20,30,40,50]
+color=["#68E204","#3FDD34","#41BC55","#1B9435","#0E5200"] #顏色列表
+label=['A','B','C','D','E']
+plt.bar(x,height=h,tick_label=label,color=color,width=0.3)
+plt.title('color --Bar Chat')
+plt.show()
