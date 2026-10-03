@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=[1,2,3,4,5,6,7,8,9,10]
+h=[10,20,30,40,50,60,70,80,90]
+label=['A','B','C','D','E','F','G','H','I','J']
+color=["#F496FF",'#']
+plt.bar(x,h,tick_label=label,)
