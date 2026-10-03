@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt #匯入matplotlib模組
+import numpy as np
+x=np.linspace(0,4*np.pi,1000) #x的範圍為0~4π,取1000個樣本點
+ysin=np.sin(x) #繪出sinx的波形
+ycos=np.cos(x) #繪出cosx的波形
+
+plt.plot(x,ysin)
+plt.plot(x,ycos)
+
+plt.xlabel('x') #x軸名稱
+plt.ylabel('y') #y軸名稱
+plt.title('Trigonometric functions') #三角函數的圖形
+
+plt.legend(['sin','cos']) 
+plt.show() #顯示圖形
