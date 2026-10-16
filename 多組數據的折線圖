@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x=[['A','B','C','D','E'],['F','G','H','I','J']]
+y=[[12.6,20.8,32.6,48.9,65.3],[13.8,22.3,31.5,46.2,69.5]]
+plt.plot(x[0],y[0],color="#FF9CE6",marker='o',linestyle='--')
+plt.plot(x[1],y[1],color="#F3F350",marker='o',linestyle='--')
+plt.show()
