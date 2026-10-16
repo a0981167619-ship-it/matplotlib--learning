@@ -1,0 +1,37 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.arange(-6*np.pi,6*np.pi,0.01)
+y=np.cos(x)
+plt.plot(x,y,color="#93EBFFD2") #畫cosx的圖形
+plt.title('cos(x)') #標題
+plt.legend(['cos(x)']) #圖例
+plt.show()
+
+x1=np.arange(-6*np.pi,6*np.pi,0.01)
+y1=np.cos(1/2*x1) #把cosx的圖形水平伸縮為2倍
+plt.plot(x1,y1,color="#E209F2")
+plt.title('cos(1/2x)')
+plt.legend(['cos(1/2x)'])
+plt.show()
+
+x2=np.arange(-6*np.pi,6*np.pi,0.01)
+y2=np.cos(-1/2*x2)
+plt.plot(x2,y2,color="#96FCA3")
+plt.title('-cos(1/2x)') #先把cosx的圖形乘上負號,再水平伸縮為2倍
+plt.legend(['-cos(1/2x)'])
+plt.show()
+
+x3=np.arange(-6*np.pi,6*np.pi,0.01)
+y3=np.cos(3*x3) #把cosx的圖形水平伸縮為1/3倍
+plt.plot(x3,y3,color="#274D01")
+plt.title('cos(3x)') 
+plt.legend(['cos(3x)'])
+plt.show()
+
+x4=np.arange(-6*np.pi,6*np.pi,0.01)
+y4=np.cos(1/3*x4) #把cosx的圖形水平伸縮為3倍
+plt.plot(x4,y4,color="#0C0142")
+plt.title('cos(1/3x)')
+plt.legend(['cos(1/3x)'])
+plt.show()
