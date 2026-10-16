@@ -1,16 +1,16 @@
-import matplotlib.pyplot as plt
+[import matplotlib.pyplot as plt
 import numpy as np
 
 x=np.arange(-4*np.pi,4*np.pi,0.01) #每次增加0.01
 y=np.sin(x)
-plt.plot(x,y,color="#2CD8E1")
+plt.plot(x,y,color="#2CD8E1")#畫圖
 plt.title('sin(x)') #標題
 plt.legend(['sin(x)']) #圖例
 plt.show()
 
 
 x1=np.arange(-2*np.pi,2*np.pi,0.1) #每次增加0.1
-y1=np.sin(2*x1)
+y1=np.sin(2*x1) #把sinx的圖形水平伸縮1/2倍
 
 plt.plot(x1,y1,color="#FFFF07")
 plt.title('sin(2x)')
@@ -18,14 +18,14 @@ plt.legend(['sin(2x)'])
 plt.show()
 
 x3=np.arange(0,2*np.pi,0.01)
-y3=np.sin(-x3)
+y3=np.sin(-x3) #把sinx的圖形加上負號,上下顛倒
 plt.plot(x3,y3,color="#EEB4FE")
 plt.title('sin(-x)')
 plt.legend(['sin(-x)'])
 plt.show()
 
 x4=np.arange(0,2*np.pi,0.01)
-y4=np.sin(-2*x4)
+y4=np.sin(-2*x4) #先把sinx的圖形上下顛倒後,再水平伸縮1/2倍
 plt.plot(x4,y4,color="#86FFAE")
 plt.title('sin(-2x)')
 plt.legend(['sin(-2x)'])
